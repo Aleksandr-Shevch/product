@@ -9,7 +9,7 @@ public class ProductInfo {
     static Product product;
     static double totalWeight;
     static String totalWeightRounded;
-    static private final String MEASURE = "кг";
+    static private final String MEASURE = "кг.";
 
 
     public static void main(String[] args) {
