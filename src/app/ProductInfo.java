@@ -1,5 +1,7 @@
 package app;
 
+import java.util.Scanner;
+
 public class ProductInfo {
     static String name;
     static double weight;
@@ -11,6 +13,16 @@ public class ProductInfo {
 
 
     public static void main(String[] args) {
-        System.out.println("products");
+        doInputs();
+    }
+    static private void doInputs() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Наименование товара: ");
+        name = scanner.nextLine();
+        System.out.print("Вес товара" + " (" + MEASURE + "): ");
+        weight = scanner.nextDouble();
+        System.out.print("Количество товара (шт.): ");
+        quantity = scanner.nextInt();
+        scanner.close();
     }
 }
